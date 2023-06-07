@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+  .hoverEffect{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    padding: 5px 7px;
+    &:hover{
+      background-color: #ebebeb;
+    }
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +36,5 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    margin: 0
 }
